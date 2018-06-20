@@ -13,6 +13,7 @@
 
 - name: Install Pip.
   apt: name=python-pip state=installed
+  version: 9.03
   become: yes
 
 - name: Install Docker Python library.
