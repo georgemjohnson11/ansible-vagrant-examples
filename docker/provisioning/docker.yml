@@ -1,5 +1,6 @@
 ---
 - name: Build Docker images from Dockerfiles.
+  become: yes
   docker_image:
     name: "{{ item.name }}"
     tag: "{{ item.tag }}"
